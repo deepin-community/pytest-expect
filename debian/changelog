@@ -1,0 +1,26 @@
+pytest-expect (1.1.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set upstream metadata fields: Bug-Database, Repository, Repository-
+    Browse.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #937559
+  * Update Homepage field
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 17:48:44 -0400
+
+pytest-expect (1.1.0-1) unstable; urgency=medium
+
+  * Initial packaging. (Closes: #844387)
+
+ -- Diane Trout <diane@ghic.org>  Mon, 14 Nov 2016 22:49:06 -0800

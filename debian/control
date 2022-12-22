@@ -1,0 +1,32 @@
+Source: pytest-expect
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Diane Trout <diane@ghic.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-six
+Vcs-Git: https://salsa.debian.org/python-team/modules/pytest-expect.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/pytest-expect
+Homepage: https://github.com/gsnedders/pytest-expect
+Standards-Version: 3.9.8
+
+Package: python3-pytest-expect
+Architecture: all
+Depends: python3-pytest,
+         python3-six,
+         python3-u-msgpack,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: py.test-3 plugin to store test expectations
+ A py.test plugin that stores test expectations by saving the set of failing
+ tests, allowing them to be marked as xfail when running them in future. The
+ tests expectations are stored such that they can be distributed alongside the
+ tests. However, note that test expectations can only be reliably shared between
+ Python 2 and Python 3 if they only use ASCII characters in their node ids: this
+ likely isn’t a limitation if tests are using the normal Python format, as
+ Python 2 only allows ASCII characters in identifiers.
+ .
+ This package contains the Python 3 version of pytest-expect.
